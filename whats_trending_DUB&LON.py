@@ -10,6 +10,5 @@ dub_trends = api.trends_place(DUB_WOE_ID)
 lon_trends = api.trends_place(LON_WOE_ID)
 
 
-
 print json.dumps(dub_trends, indent=1)
 print json.dumps(lon_trends, indent=1)
