@@ -11,6 +11,10 @@ limit = 500
 
 class MyStreamListener(StreamListener):
 
+    def __init__(self):
+        super(MyStreamListener, self).__init__()
+        self.num_tweets = 0
+
     def on_data(self, data):
         if self.num_tweets < limit:
             self.num_tweets += 1
